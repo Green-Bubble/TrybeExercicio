@@ -1,0 +1,41 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-decoration: underline red;
+}
+
+ul {
+    background-color: rgb(140, 133, 151);
+    font-style: italic;
+}
+
+.cor {
+    background-color: rgb(136, 42, 165);
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+}
+
+div.altura {
+    line-height: 1.6;
+}
+
+.amarelo {
+    background-color: rgb(230, 230, 28);
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.marrom {
+    background-color: brown;
+}
