@@ -45,6 +45,23 @@
                     <textarea name="abstract" id="abstract" maxlength="500" cols="" rows=""></textarea>
                     <div class="instructions"><em>Descreva sua resposta em até 500 caracteres.</em></div>
                 </div>
+                <div class="line-content">
+                    <fieldset>
+                        <legend>Qual a melhor data para realizar sua viagem?</legend>
+                        <label for="start">Data início:</label>
+                        <input type="date" id="start" name="trip-start" value="2022-06-01" min="2022-06-01" max="2022-12-31">
+                        <label for="end">Data fim:</label>
+                        <input type="date" id="end" name="trip-end" value="2022-12-31" min="2022-06-01" max="2022-12-31">
+                    </fieldset>
+                </div>
+                <div class="line-content">
+                    <input type="radio" name="news-type" id="news-letter" value="news">
+                    <label for="news-letter">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+                </div>
+                <div class="line-content">
+                    <input type="radio" name="image-type" id="image" value="images">
+                    <label for="image">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                </div>
             </div>
         </form>
     </main>
