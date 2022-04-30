@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para concorrer a uma Viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="travel-form-header">
+        <h1>As Férias Dos Seus Sonhos</h1>
+        <p>
+            <em>Preencha o formulário e concorra a uma viagem<br>
+                totalmente paga, oferecida pela Trybe Trip.</em>
+        </p>
+    </header>
+    <main>
+        <form class="travel-form" action method="get">
+            <div class="form-row">
+                <div class="line-content">
+                    <label for="full-name">Nome:</label>
+                    <input type="text" name="full-name" id="full-name" minlength="10" maxlength="40">
+                </div>
+                <div class="line-content">
+                    <label for="email-adress">Email:</label>
+                    <input type="text" name="email-adress" id="email-adress" minlength="10" maxlength="50">
+                </div>
+                <div class="line-content">
+                    <fieldset>
+                        <legend>Destino Preferido</legend>
+                        <input type="radio" name="destination-type" id="destination-type-1" value="city">
+                        <label for="destination-type-1">Cidade</label>
+                        <input type="radio" name="destination-type" id="destination-type-2" value="field">
+                        <label for="destination-type-2">Campo</label>
+                        <input type="radio" name="destination-type" id="destination-type-3" value="beach">
+                        <label for="detination-type-3">Praia</label>
+                        <input type="radio" name="destination-type" id="destination-type-4" value="mountains">
+                        <label for="destination-type-4">Montanhas</label>
+                    </fieldset>
+
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
