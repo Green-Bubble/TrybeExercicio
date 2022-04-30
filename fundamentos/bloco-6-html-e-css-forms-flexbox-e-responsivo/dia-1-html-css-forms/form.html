@@ -8,13 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="travel-form">
-        <h1>Sua Viagem Começa Aqui</h1>
+    <header class="travel-form-header">
+        <h1>As Férias Dos Seus Sonhos</h1>
         <p>
             <em>Preencha o formulário e concorra a uma viagem<br>
-                totalmente paga.</em>
+                totalmente paga, oferecida pela Trybe Trip.</em>
         </p>
     </header>
+    <main>
+        <form class="travel-form" action method="get">
+            <div class="form-row">
+                <div class="line-content">
+                    <label for="full-name">Nome:</label>
+                    <input type="text" name="full-name" id="full-name" minlength="10" maxlength="40">
+                </div>
+                <div class="line-content">
+                    <label for="email-adress">Email:</label>
+                    <input type="text" email="email-adress" id="email-adress" minlength="10" maxlength="50">
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
