@@ -64,6 +64,6 @@ const books = [
 // 🚀 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
 //Dica: cada inicial termina com um ponto.
 
-const authorWith3DotsOnName = books.filter((findBook) => (findBook.author.name[1] === '.' && findBook.author.name[4] === '.' && findBook.author.name[7] === '.'))[0].name;
+const authorWith3DotsOnName = books.find((findBook) => findBook.author.name.split('.').length === 4).name;
 
 console.log(authorWith3DotsOnName)
