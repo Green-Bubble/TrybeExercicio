@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para concorrer a uma Viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="travel-form-header">
+        <h1>As Férias Dos Seus Sonhos</h1>
+        <p>
+            <em>Quer ganhar uma viagem totalmente paga?<br>
+                Preencha o formulário para concorrer a esta<br>
+                incrível oportunidade oferecida pela TrybeTrip.</em>
+        </p>
+    </header>
+    <main>
+        <form class="travel-form" action method="get">
+            <div class="form-row">
+                <div class="line-content">
+                    <label for="full-name">Nome:</label>
+                    <input type="text" name="full-name" id="full-name" minlength="10" maxlength="40">
+                </div>
+                <div class="line-content">
+                    <label for="email-adress">Email:</label>
+                    <input type="text" name="email-adress" id="email-adress" minlength="10" maxlength="50">
+                </div>
+                <div class="line-content">
+                    <fieldset>
+                        <legend>Destino Preferido</legend>
+                        <input type="radio" name="destination-type" id="destination-type-1" value="city">
+                        <label for="destination-type-1">Cidade</label>
+                        <input type="radio" name="destination-type" id="destination-type-2" value="field">
+                        <label for="destination-type-2">Campo</label>
+                        <input type="radio" name="destination-type" id="destination-type-3" value="beach">
+                        <label for="detination-type-3">Praia</label>
+                        <input type="radio" name="destination-type" id="destination-type-4" value="mountains">
+                        <label for="destination-type-4">Montanhas</label>
+                    </fieldset>
+                </div>
+                <div class="line-content">
+                    <label for="abstract">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
+                    <textarea name="abstract" id="abstract" maxlength="500" cols="" rows=""></textarea>
+                    <div class="instructions"><em>Descreva sua resposta em até 500 caracteres.</em></div>
+                </div>
+                <div class="line-content">
+                    <fieldset>
+                        <legend>Qual a melhor data para realizar sua viagem?</legend>
+                        <label for="start">Data início:</label>
+                        <input type="date" id="start" name="trip-start" value="2022-06-01" min="2022-06-01" max="2022-12-31">
+                        <label for="end">Data fim:</label>
+                        <input type="date" id="end" name="trip-end" value="2022-12-31" min="2022-06-01" max="2022-12-31">
+                    </fieldset>
+                </div>
+                <div class="line-content">
+                    <button type="clean" id="clear-btn">Limpar</button>
+                </div>
+                <div class="line-content">
+                    <input type="checkbox" name="news-type" id="news-letter" value="news">
+                    <label for="news-letter">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+                </div>
+                <div class="line-content">
+                    <input type="checkbox" name="image-type" id="image" value="images">
+                    <label for="image">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                </div>
+                <div class="line-content">
+                    <button type="submit" id="btn" disabled>Enviar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
