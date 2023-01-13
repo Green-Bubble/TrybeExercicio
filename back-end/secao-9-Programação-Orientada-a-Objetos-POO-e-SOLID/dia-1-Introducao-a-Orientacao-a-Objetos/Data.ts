@@ -73,4 +73,71 @@ class Data {
 
         return 0;
     }
+
+    format(formatting: string): string {
+        const conditions: boolean[] = [
+            (!formatting.match(/a{2,4}/g)),
+            (!formatting.match(/m{2}/g) && !formatting.match(/M{1}/g)),
+            (!formatting.match(/d{2}/g)),
+        ];
+
+        if (conditions.every((cond) => cond)) {
+            throw new Error('O formato passado é inválido: ${formatting}')
+        }
+
+        const day = this.day > 9 ? this.day.toString() : `0${this.day.toString()}`;
+        const month = this.month > 9
+            ? this.month.toString()
+            : `0${this.month.toString()}`;
+        const year = this.year.toString();
+
+        const dateFormatting = formatting
+        .replace('dd', day).replace('mm', month)
+        .replace('M', this.getMonthName()).replace('aaa', year)
+        .replace('aa', year.substr(-2));
+
+        return dateFormatting;
+    }
+
+    private static validateDate(day: number, month: number, year: number)
+        : boolean {
+            const dateStr = `${year}-${month}-${day}`;
+
+            if (new Date(dateStr).getDate() !== day) return false;
+
+            return true;
+        }
 }
+
+// Para testar!
+
+// const testDate = new Data(29, 1, 1989);
+
+// console.log(testDate);
+// console.log('Dia: ', testDate.day);
+// console.log('Mês: ', testDate.month);
+// console.log('Mês por extenso: ', testDate.getMonthName());
+// console.log('Ano: ', testDate.year);
+// console.log('É ano bissexto: ', testDate.isLeapYear() ? 'Sim' : 'Não');
+// console.log(testDate.format('dd/mm/aaaa'));
+// console.log(testDate.format('dd-mm-aaaa'));
+// console.log(testDate.format('aaaa/mm/dd'));
+// console.log(testDate.format('aaaa-mm-dd'));
+// console.log(testDate.format('dd de M de aa'));
+// console.log(testDate.format('dd, M de aaaa'));
+
+// const otherDate = new Data(30, 1, 2021);
+
+// const compared = testDate.compare(otherDate);
+
+// const compareStates = ['anterior', 'igual', 'posterior'];
+
+// console.log(`A primeira data é ${compareStates[compared + 1]} a segunda.`);
+
+// // data inválida
+// const invalidDate = new Data(31, 2, 2021);
+
+// console.log('Teste data inválida: ', invalidDate);
+
+// // formato inválido
+// console.log(invalidDate.format('a m d'));
