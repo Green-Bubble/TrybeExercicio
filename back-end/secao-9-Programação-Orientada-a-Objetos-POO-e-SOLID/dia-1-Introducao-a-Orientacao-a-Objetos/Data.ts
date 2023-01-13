@@ -4,9 +4,8 @@ class Data {
     private _year: number;
 
     constructor(day: number, month: number, year: number) {
-        const dateStr = `${year}-${month}-${day}`;
 
-        if (new Date(dateStr).getDate() !== day) {
+        if (!Data.validateDate(day, month, year)) {
             this._day = 1;
             this._month = 1;
             this._year = 1900;
@@ -40,8 +39,38 @@ class Data {
     set year(value: number) {
         this._year = value;
     }
-}
 
-// Para testar!
-// const testDate = new Data(29, 1, 1989);
-// console.log(testDate);
+    getMonthName(): string {
+        const months = [
+            'janeiro',
+            'fevereiro',
+            'março',
+            'abril',
+            'maio',
+            'junho',
+            'julho',
+            'agosto',
+            'setembro',
+            'outubro',
+            'novembro',
+            'dezembro',
+        ];
+    
+        return months[this.month - 1];
+    }
+
+    isLeapYear(): boolean {
+        return this._year % 4 === 0;
+    }
+
+    compare(date: Data): number {
+        const currentDateStr = `${this.year}-${this.month}-${this.day}`;
+
+        const dateStr = `${date.year}-${date.month}-${date.day}`;
+
+        if (new Date(currentDateStr) > new Date(dateStr)) return 1;
+        if (new Date(currentDateStr) < new Date(dateStr)) return -1;
+
+        return 0;
+    }
+}
