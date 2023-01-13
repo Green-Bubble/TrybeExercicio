@@ -1,5 +1,6 @@
 import Client from "./Client";
 import OrderItem from "./OrderItem";
+
 export default class Order {
     private _client: Client;
     private _items: OrderItem[] = [];
@@ -56,5 +57,18 @@ export default class Order {
             }
 
             this._discount = value;
+        }
+
+        calculateTotal(): number {
+            return this._items
+            .reduce((previusValue, item) => {
+                const total = previusValue + item.price;
+
+                return total;
+            }, 0);
+        }
+
+        calculateTotalWithDiscount(): number {
+            return this.calculateTotal() * (1 - this.discount);
         }
 }
