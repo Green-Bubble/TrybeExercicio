@@ -44,6 +44,16 @@ export default class Student extends Person {
         this._assignmentsGrades = value;
     }
 
+    sumGrades(): number {
+        const sum = this._examsGrades.reduce((a, b) => a + b);
+        return sum;
+    }
+
+    sumAverageGrade(): number {
+        const average = this.sumGrades() / this._examsGrades.length;
+        return average;
+    }
+
     generateEnrollment(): string {
         const randomStr = String(Date.now() * (Math.random() + 1)).replace(/\W/g, '');
 

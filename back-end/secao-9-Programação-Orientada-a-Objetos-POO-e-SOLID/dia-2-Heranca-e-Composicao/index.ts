@@ -28,3 +28,6 @@ console.log(lucas);
 console.log(jessica);
 console.log(tamires);
 console.log(fernando);
+
+console.log(carolina.sumAverageGrade());
+console.log(lucas.sumAverageGrade());
