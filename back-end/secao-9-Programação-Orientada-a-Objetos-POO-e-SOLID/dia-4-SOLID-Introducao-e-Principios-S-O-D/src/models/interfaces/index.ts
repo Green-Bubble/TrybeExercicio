@@ -1,4 +1,4 @@
-// export { IPlant, InewPlant } from './IPlant'
+export { IPlant, INewPlant } from './IPlant'
 export {
     IModel,
     IModelReader,
