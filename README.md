@@ -76,113 +76,113 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React 
 
-- [ ] 11-1: _Componentes com estado e eventos_
-- [ ] 11-2: _Formulários no React_
+- [x] 11-1: _Componentes com estado e eventos_
+- [x] 11-2: _Formulários no React_
 
 ##### Bloco 12: Ciclo de Vida de Componentes e React Router
 
-- [ ] 12-1: _Ciclo de vida de componentes_
-- [ ] 12-2: _React Router_
+- [x] 12-1: _Ciclo de vida de componentes_
+- [x] 12-2: _React Router_
 
 ##### Bloco 13: Metodologias Ágeis
 
-- [ ] 13-1: _Metodologias Ágeis_
+- [x] 13-1: _Metodologias Ágeis_
 
 ##### Bloco 14: Testes automatizados com React Testing Library
 
-- [ ] 14-1: _RTL - Primeiros Passos_
-- [ ] 14-2: _RTL - Mocks e Inputs_
-- [ ] 14-3: _RTL - Testando React Router_
+- [x] 14-1: _RTL - Primeiros Passos_
+- [x] 14-2: _RTL - Mocks e Inputs_
+- [x] 14-3: _RTL - Testando React Router_
 
 ##### Bloco 15: Gerenciamento de Estado com Redux
 
-- [ ] 15-1: _Introdução ao Redux_
-- [ ] 15-2: _Usando o Redux no React_
-- [ ] 15-3: _Usando o Redux no React - Prática_
-- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
-- [ ] 15-5: _Testes em React-Redux_
+- [x] 15-1: _Introdução ao Redux_
+- [x] 15-2: _Usando o Redux no React_
+- [x] 15-3: _Usando o Redux no React - Prática_
+- [x] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [x] 15-5: _Testes em React-Redux_
 
 ##### Bloco 16: Projeto React
 
-- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
+- [x] 16-1: _[Projeto - Jogo de Trivia]()_
 
 ##### Bloco 17: Context API & React Hooks 
 
-- [ ] 17-1: _Context API do React_
-- [ ] 17-2: _React Hooks - useState e useContext_
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 17-1: _Context API do React_
+- [x] 17-2: _React Hooks - useState e useContext_
+- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
 
 ##### Bloco 18: Projeto Final de Front-end
 
-- [ ] 18-1: _[Projeto - App de Receitas]()_
+- [x] 18-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 19: Docker - Utilizando Containers
 
-- [ ] 19-1: _Introdução Back-end_
-- [ ] 19-1: _Utilizando Containers - Docker_
-- [ ] 19-2: _Manipulação e Criação de Imagens no Docker_
-- [ ] 19-3: _Orquestrando Containers com Docker Compose_
+- [x] 19-1: _Introdução Back-end_
+- [x] 19-1: _Utilizando Containers - Docker_
+- [x] 19-2: _Manipulação e Criação de Imagens no Docker_
+- [x] 19-3: _Orquestrando Containers com Docker Compose_
 
 ##### Bloco 20: Introdução à SQL
 
-- [ ] 20-1: _Introdução - Banco de dados relacionais_
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando Tabelas_
+- [x] 20-1: _Introdução - Banco de dados relacionais_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: _Filtrando dados de forma específica_
+- [x] 20-4: _Manipulando Tabelas_
 
 ##### Bloco 21: Funções SQL, JOINs e Normalização
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
-- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs_
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Node.js - Um motor JavaScript_
-- [ ] 22-2: _Node.js - Fluxo Assíncrono_
-- [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] 22-4: _Express - HTTP com Node.js_
-- [ ] 22-5: _Express - Middlewares_
+- [x] 22-1: _Node.js - Um motor JavaScript_
+- [x] 22-2: _Node.js - Fluxo Assíncrono_
+- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 23-1: _Arquitetura de Software - Camada de Model_
-- [ ] 23-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 23-3: _Arquitetura web - Rest e Restful_
-- [ ] 23-4: _Arquitetura de Software - Testando as Camadas_
+- [x] 23-1: _Arquitetura de Software - Camada de Model_
+- [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
+- [x] 23-3: _Arquitetura web - Rest e Restful_
+- [x] 23-4: _Arquitetura de Software - Testando as Camadas_
 
 ##### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 24-1: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 24-2: _ORM - Associations_
-- [ ] 24-3: _JWT - (JSON Web Token)_
-- [ ] 24-4: _Testando APIs com testes de Integração_
+- [x] 24-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 24-2: _ORM - Associations_
+- [x] 24-3: _JWT - (JSON Web Token)_
+- [x] 24-4: _Testando APIs com testes de Integração_
 
 ##### Bloco 25: Deployment
 
-- [ ] 25-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 25-2: _Deploy Docker & Heroku_
+- [x] 25-1: _Infraestrutura - Deploy com Railway_
+- [x] 25-2: _Deploy Docker & Railway_
 
 ##### Bloco 26: TypeScript	
 
-- [ ] 26-1: _Introdução ao TypeScript_
-- [ ] 26-2: _Tipagem Estática e Generics_
-- [ ] 26-3: _Express com TypeScript_
+- [x] 26-1: _Introdução ao TypeScript_
+- [x] 26-2: _Tipagem Estática e Generics_
+- [x] 26-3: _Express com TypeScript_
 
 ##### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 27-1: _Introdução à Orientação a Objetos_
-- [ ] 27-2: _Herança e Interfaces_
-- [ ] 27-3: _Polimorfismo_
-- [ ] 27-4: _SOLID - Introdução e Princípios S, O e D_
-- [ ] 27-5: _SOLID - Princípios L e I_
+- [x] 27-1: _Introdução à Orientação a Objetos_
+- [x] 27-2: _Herança e Interfaces_
+- [x] 27-3: _Polimorfismo_
+- [x] 27-4: _SOLID - Introdução e Princípios S, O e D_
+- [x] 27-5: _SOLID - Princípios L e I_
 
 ##### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28-1: _[Projeto - TFC - Trybe Futebol Clube]()_
+- [x] 28-1: _[Projeto - TFC - Trybe Futebol Clube]()_
 
 ##### Bloco 29: Introdução ao MongoDB
 
