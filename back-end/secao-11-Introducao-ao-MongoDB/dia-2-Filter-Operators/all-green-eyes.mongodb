@@ -1,0 +1,12 @@
+//Exercício 7: Selecione todos os super-heróis que têm olhos verdes ("green").
+
+//Sem utilizar o operador $eq:
+use('class');
+db.superheroes.find(
+    { "aspects.eyeColor": "green" }
+);
+
+//Utilizando o operador $eq:
+db.superheroes.find(
+    { "aspects.eyeColor": { $eq: "green" } }
+).pretty();
