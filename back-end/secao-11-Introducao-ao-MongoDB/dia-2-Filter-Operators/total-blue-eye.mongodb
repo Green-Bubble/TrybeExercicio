@@ -1,0 +1,12 @@
+//Exercício 8: Retorne o total de super-heróis com olhos azuis ("blue").
+
+//Sem utilizar o operador $eq:
+use('class');
+db.superheroes.countDocuments(
+    { "aspects.eyeColor": "blue" }
+);
+
+//Utilizando o operador $eq:
+db.superheroes.countDocuments(
+    { "aspects.eyeColor": { $eq: "blue" } }
+);

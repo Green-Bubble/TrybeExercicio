@@ -1,0 +1,7 @@
+//Exercício 17: Retorne o total de documentos que contém o campo hairColor.
+
+use('class');
+
+db.superheroes.countDocuments(
+    { "aspects.hairColor": { $exists: true } }
+);
