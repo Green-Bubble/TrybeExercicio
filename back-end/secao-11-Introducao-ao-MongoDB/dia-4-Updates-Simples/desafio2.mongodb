@@ -1,0 +1,8 @@
+//Altere budget para 1 no filme Godzilla.
+
+use('cinema');
+
+db.movies.updateOne(
+    { title: "Godzilla" },
+    { $set: { budget: 1 } },
+);
