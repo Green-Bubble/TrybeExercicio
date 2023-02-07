@@ -1,0 +1,16 @@
+// Adicione a categoria "90's" aos filmes Batman e Home Alone.
+
+use('cine');
+
+db.filmes.updateOne(
+    { title: {
+        $in: ["Batman", "Home Alone"],
+        },
+    },
+    {
+        $push: { category: "90's" },
+    },
+);
+
+use('cine');
+db.filmes.find({});

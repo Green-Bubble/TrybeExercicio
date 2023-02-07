@@ -1,0 +1,13 @@
+// Remova o primeiro elemento do array category do filme Batman.
+
+use('cine');
+
+db.filmes.updateOne(
+    { title: "Batman"},
+    {
+        $pop: { category: -1 },
+    },
+);
+
+use('cine');
+db.filmes.find({});

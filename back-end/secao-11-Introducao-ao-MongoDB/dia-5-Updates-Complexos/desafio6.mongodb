@@ -1,0 +1,13 @@
+// Adicione o elemento "action" ao array category do filme Batman, garantindo que esse valor não se duplique.
+
+use('cine');
+
+db.filmes.updateOne(
+    { title: "Batman" },
+    {
+        $addToSet: { category: "action" },
+    },
+);
+
+use('cine');
+db.filmes.find({});
