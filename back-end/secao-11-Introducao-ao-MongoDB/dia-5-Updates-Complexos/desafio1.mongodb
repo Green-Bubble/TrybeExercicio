@@ -1,0 +1,12 @@
+// Adicione a categoria "superhero" ao filme Batman.
+
+use('cine');
+
+db.filmes.updateOne(
+    { title: "Batman" },
+    {
+        $push: { category: "superhero" },
+    },
+); 
+
+// db.filmes.find({}).pretty();
